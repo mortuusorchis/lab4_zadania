@@ -34,17 +34,17 @@ void wyswietlanie(int a, int b) {
 */
 // zadanie 1
 
-#include <iostream>
+/*#include <iostream>
 #include <string>
 using namespace std;
 
 void czesc(string imie); 
 
 void tabliczka();
-void liczby();
+void liczby(); */
 
-int main()
- {/*
+//int main()
+/* {
 	string imie;
 		cout << "Podaj imie: ";
 	cin >> imie;
@@ -66,5 +66,40 @@ void tabliczka() {
 		}
 		cout << endl;
 	}
-}
+}*/
 // zadanie 3 
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {  //kod 03_13
+	int liczba;
+
+	cout << "Podaj liczbe: ";
+	cin >> liczba;
+
+	cout << "START" << endl;
+
+	if (liczba > 0) {
+		cout << "Liczba jest dodatnia" << endl;
+
+		if (liczba % 2 == 0) {
+			cout << "Liczba jest parzysta" << endl;
+		}
+		else {
+			cout << "Liczba jest nieparzysta" << endl;
+		}
+	}
+	else if (liczba < 0) {
+		cout << "Liczba jest ujemna" << endl;
+	}
+	else {
+		cout << "Liczba jest rowna zero" << endl;
+	}
+
+	cout << "KONIEC" << endl;
+
+	return 0;
+}
